@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,400;0,700;0,900;1,100&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+
+}
+.site-nav{
+    position: absolute;
+    top: 0;
+}
+
+.home{
+    background-image: url("../img/bg-shape.svg");
+    background-repeat: no-repeat;
+    background-position:top right;
+    background-size: 50%;
+}
+
+.site-logo{
+    width: 150px;
+}
+.content-logo-1{
+    width: 500px;
+}
+@media screen and (max-width:480px){
+    .content-logo-1{
+        width: 300px;
+    }
+}
