@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile Website</title>
+    <link rel="stylesheet" href="./vendor/fontawesomepro/css/all.min.css">
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./vendor/slick/slick.css">
+    <link rel="stylesheet" href="./vendor/slick/slick-theme.css">
 </head>
 <body>
-    <div class="container-fluid site-nav">
+    <header class="container-fluid site-nav">
         <div class="row">
             <div class="col-12 p-0 p-md-2">
                 <div class="container">
@@ -58,14 +61,14 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="home">
-        <div class="container-fluid min-vh-100">
+    </header>
+    <section class="home">
+        <div class="container-fluid min-vw-100">
             <div class="row">
                 <div class="col-12 mt-5">
                    <div class="container p-1 p-md-3">
                     <div class="row align-items-center mt-5 flex-column-reverse flex-md-row ">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 py-4 py-md-0">
                             <div class="">
                                 <h4 class="text-uppercase">Social Media</h4>
                                 <h1 class="text-uppercase fw-bolder text-primary">For Business!</h1>
@@ -77,7 +80,7 @@
                                 <a href="#" class="btn btn-primary text-uppercase">Get A Free Audit</a>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 mb-3 ">
+                        <div class="col-12 col-md-6 mb-3 py-4 py-md-0">
                             <div class="">
                                 <img src="./img/content-1.svg" class="content-logo-1" alt="">
                             </div>
@@ -87,6 +90,331 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="container-fluid about">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-12 col-md-6 py-5">
+              <div class="text-start text-md-end me-5 me-md-0">
+                <img src="./img/content-2.svg" class="w-75 about-img-2" alt="">
+              </div>
+          </div>
+          <div class="col-12 col-md-6 about-text text-start py-5">
+              <div class="w-75 about-text-2">
+                <p class="text-primary-soft">Biography</p>
+                <h4 class="text-uppercase fw-bolder">Who we are</h4>
+                <p class="text-black-50 py-3">Lorem Media is a full-service social media agency. We offer businesses innovative solutions that deliver the right type of audience to you in the most effective strategies possible. We strive to develop a community around your business, polishing your branding, and improving your public relations.
+                  Social Media is now one of the most powerful marketing tools with the ability to communicate with a target audience in real time.
+                  </p>
+                  <p class="text-black-50 py-3">It's 2019: time to sink or swim.</p>
+                  <p class="text-black-50 py-3">We are your Social Media Marketing Agency.</p>
+                  <a href="#" class="btn btn-primary text-uppercase">See More</a>
+              </div>
+          </div>
+        </div>
+    </section>
+    <section class="container-fluid services">
+        <div class="row">
+          <div class="col-12">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="mt-5">
+                    <p class="text-primary-soft">Our Services</p>
+                    <h4 class="text-uppercase fw-bolder">What we offer</h4>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mt-5">
+                    <div class="card shadow services-card">
+                      <div class="card-body py-5">
+                        <img src="./img/icon-1.svg" class="mb-3" alt="">
+                        <p class="text-primary mb-3">SOCIAL MEDIA MANAGEMENT</p>
+                        <p class="text-black-50 mb-4 services-card-des">Perfect for growing your brand’s social community and engage with the right 
+                          audience. We manage everything from curation of content to management of 
+                          comments and everything in between.</p>
+                          <a href="#" class="btn btn-secondary">See More</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-5">
+                  <div class="card shadow services-card">
+                    <div class="card-body py-5">
+                      <img src="./img/icon-2.svg" class="mb-3" alt="">
+                      <p class="text-primary mb-3">SOCIALS GROWTH CAMPAIGN</p>
+                      <p class="text-black-50 mb-4 services-card-des">Our social growth campaign will have your socials come alive.
+                        With constant growth and engagement you will be sure to have the thriving you’ve been looking for.</p>
+                        <a href="#" class="btn btn-secondary">See More</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-4 mt-5">
+                <div class="card shadow services-card">
+                  <div class="card-body py-5">
+                    <img src="./img/icon-3.svg" class="mb-3" alt="">
+                    <p class="text-primary mb-3">BRANDING & MEDIA</p>
+                    <p class="text-black-50 mb-4 services-card-des">Done right, branding offers a company an edge over the competition. So what exactly is branding, and why is it important for companies to integrate a well-rounded branding and media strategy?</p>
+                      <a href="#" class="btn btn-secondary">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mt-5">
+                <div class="card shadow services-card">
+                  <div class="card-body py-5">
+                    <img src="./img/icon-4.svg" class="mb-3" alt="">
+                    <p class="text-primary mb-3">INFLUENCER MARKETING</p>
+                    <p class="text-black-50 mb-4 services-card-des">We will pair your business with influencers that speak to your audience. Influencer Marketing is the most effective way to reach a loyal audience.</p>
+                      <a href="#" class="btn btn-secondary">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mt-5">
+                <div class="card shadow services-card">
+                  <div class="card-body py-5">
+                    <img src="./img/icon-5.svg" class="mb-3" alt="">
+                    <p class="text-primary mb-3">SOCIAL MEDIA MANAGEMENT</p>
+                    <p class="text-black-50 mb-4 services-card-des">Our ad campaigns will bring you the results your looking for. From brand awareness campaigns to lead funnels, we have got the tools to create the right ads for your business. Our re-targeting campaigns will be sure to get your visitors coming back to your site.</p>
+                      <a href="#" class="btn btn-secondary">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mt-5">
+                <div class="card shadow services-card">
+                  <div class="card-body py-5">
+                    <img src="./img/icon-6.svg" class="mb-3" alt="">
+                    <p class="text-primary mb-3">CONTENT MARKETING SERVICES</p>
+                    <p class="text-black-50 mb-4 services-card-des">We can create and provide your company with the best content marketing for your socials to improve online presence. Creating valuable and quality content helps boost conversions and improve customer retention.</p>
+                      <a href="#" class="btn btn-secondary">See More</a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="container-fluid pricing">
+        <div class="row">
+          <div class="col-12">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="mt-5 text-center">
+                      <p class="text-primary-soft">Pricing</p>
+                      <h4 class="text-uppercase fw-bolder">Our Pricing</h4>
+                    </div>
+                  </div>
+                </div>
+                  <div class="row pricing-slick">
+                    <div class="col-12 col-md-4 mt-5 mx-3 mb-3">
+                      <div class="card shadow services-card">
+                        <div class="card-body py-5 text-center">
+                            <h4 class="fw-bolder text-uppercase text-primary mb-4">Gold Package</h4>
+                            <p class="text-black-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laborum veritatis neque.</p>
+                            <h4 class="fw-bolder text-uppercase text-primary my-4">$ 140</h4>
+                            <a href="#" class="btn btn-outline-primary">See Details</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-5 mx-3 mb-3">
+                      <div class="card shadow services-card">
+                        <div class="card-body py-5 text-center">
+                            <h4 class="fw-bolder text-uppercase text-primary mb-4">Daily Package</h4>
+                            <p class="text-black-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laborum veritatis neque.</p>
+                            <h4 class="fw-bolder text-uppercase text-primary my-4">$ 160</h4>
+                            <a href="#" class="btn btn-primary">See Details</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-5 mx-3 mb-3">
+                      <div class="card shadow services-card">
+                        <div class="card-body py-5 text-center">
+                            <h4 class="fw-bolder text-uppercase text-primary mb-4">Weekly Package</h4>
+                            <p class="text-black-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laborum veritatis neque.</p>
+                            <h4 class="fw-bolder text-uppercase text-primary my-4">$ 420</h4>
+                            <a href="#" class="btn btn-outline-primary">See Details</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mt-5 mx-3 mb-3">
+                      <div class="card shadow services-card">
+                        <div class="card-body py-5 text-center">
+                            <h4 class="fw-bolder text-uppercase text-primary mb-4">One Month Package</h4>
+                            <p class="text-black-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laborum veritatis neque.</p>
+                            <h4 class="fw-bolder text-uppercase text-primary my-4">$ 999</h4>
+                            <a href="#" class="btn btn-outline-primary">See Details</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-5 mx-3 mb-3">
+                      <div class="card shadow services-card">
+                        <div class="card-body py-5 text-center">
+                            <h4 class="fw-bolder text-uppercase text-primary mb-4">Three Monthly Package</h4>
+                            <p class="text-black-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laborum veritatis neque.</p>
+                            <h4 class="fw-bolder text-uppercase text-primary my-4">$ 2,999</h4>
+                            <a href="#" class="btn btn-primary">See Details</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-5 mx-3 mb-3">
+                      <div class="card shadow services-card">
+                        <div class="card-body py-5 text-center">
+                            <h4 class="fw-bolder text-uppercase text-primary mb-4">Six Monthly Package</h4>
+                            <p class="text-black-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laborum veritatis neque.</p>
+                            <h4 class="fw-bolder text-uppercase text-primary my-4">$ 5,999</h4>
+                            <a href="#" class="btn btn-outline-primary">See Details</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mt-5 mx-3 mb-3">
+                      <div class="card shadow services-card">
+                        <div class="card-body py-5 text-center">
+                            <h4 class="fw-bolder text-uppercase text-primary mb-4">One Year Package</h4>
+                            <p class="text-black-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laborum veritatis neque.</p>
+                            <h4 class="fw-bolder text-uppercase text-primary my-4">$ 11,999</h4>
+                            <a href="#" class="btn btn-outline-primary">See Details</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-5 mx-3 mb-3">
+                      <div class="card shadow services-card">
+                        <div class="card-body py-5 text-center">
+                            <h4 class="fw-bolder text-uppercase text-primary mb-4">Two Year Package</h4>
+                            <p class="text-black-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laborum veritatis neque.</p>
+                            <h4 class="fw-bolder text-uppercase text-primary my-4">$ 23,999</h4>
+                            <a href="#" class="btn btn-primary">See Details</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-5 mx-3 mb-3">
+                      <div class="card shadow services-card">
+                        <div class="card-body py-5 text-center">
+                            <h4 class="fw-bolder text-uppercase text-primary mb-4">Three Year Package</h4>
+                            <p class="text-black-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem laborum veritatis neque.</p>
+                            <h4 class="fw-bolder text-uppercase text-primary my-4">$ 35,999</h4>
+                            <a href="#" class="btn btn-outline-primary">See Details</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="container-fluid contact">
+      <div class="row my-3">
+        <div class="col-12 mb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 mb-5">
+                <div class="mt-5 text-center">
+                  <p class="text-primary-soft">Contact Us</p>
+                  <h4 class="text-uppercase fw-bolder">Get In Touch With Us...</h4>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <form action="#">
+                  <div class="input-group mb-4">
+                      <input type="text" class="form-control" placeholder="Name">
+                  </div>
+                  <div class="input-group mb-4">
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="input-group mb-4">
+                  <textarea type="text" class="form-control" rows="5" placeholder="message"></textarea>
+              </div>
+              <div class="input-group mb-4">
+                <a href="#" class="btn btn-primary">Send Message</a>
+              </div>
+                </form>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2271.0437120636884!2d96.16187672785482!3d16.80525769322339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eca8da00badf%3A0xddcffcdec96b413!2sBahan%20Township%2C%20Yangon%2C%20Myanmar%20(Burma)!5e0!3m2!1sen!2ssg!4v1650964013141!5m2!1sen!2ssg" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer-box">
+          <div class="col-12 footer">
+              <div class="container footer-text">
+                <div class="row py-5 mt-5 ft">
+                  <div class="col-12 col-md-4 mt-5">
+                    <div class="ms-5 text-light">
+                      <h1 class="text-uppercase">Marketing</h1>
+                      <p>Stay In Touch</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <a href="#" class="text-decoration-none text-light me-3">
+                          <i class="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text-light me-3">
+                          <i class="fab fa-google-plus fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text-light me-3">
+                          <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text-light me-3">
+                          <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-2"></div>
+                  <div class="col-12 col-md-4"></div>
+                  <div class="col-12 col-md-2"></div>
+                </div>
+              </div>
+          </div>
+    </section>
+
+    <script src="./vendor/JQuery/js/jquery.js"></script>
+    <script src="./vendor/fontawesomepro/js/all.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./vendor/slick/slick.min.js"></script>
+
+    <script>
+
+      $('.pricing-slick').slick({
+        arrows:false,
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          responsive: [
+              {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+              }
+              },
+              {
+              breakpoint: 600,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+              }
+              },
+              {
+              breakpoint: 480,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+              }
+              }
+              // You can unslick at a given breakpoint now by adding:
+              // settings: "unslick"
+              // instead of a settings object
+          ]
+          });
+
+  </script>
 </body>
 </html>

@@ -5,7 +5,9 @@
 }
 
 body{
-
+    height: 300vh;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .site-nav{
     position: absolute;
@@ -13,6 +15,7 @@ body{
 }
 
 .home{
+    height: 100vh;
     background-image: url("../img/bg-shape.svg");
     background-repeat: no-repeat;
     background-position:top right;
@@ -25,8 +28,104 @@ body{
 .content-logo-1{
     width: 500px;
 }
-@media screen and (max-width:480px){
+
+.about{
+    background-color: #7E76F910;
+}
+
+.about-text{
+    background-image: url("../img/bg-2.svg");
+    background-size: 100%;
+    background-position: center;
+}
+.services{
+    height: 170vh;
+    background-image: url("../img/bg-3.svg");
+    background-size: 100%;
+    background-position: center;
+}
+.services-card{
+    border-radius: 35px !important;
+    border: none;
+    box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 15%) !important;
+    transition: 0.5s;
+}
+.services-card:hover{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+    transform: scale(0.98);
+}
+.services-card-des{
+    height: 150px;
+}
+
+.pricing{
+    height: 100vh;
+    background-color: #7E76F915;
+}
+
+.slick-dots{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-dots li{
+    width: 10px !important;
+    height:  10px !important;
+    background-color: transparent;
+    border: 1px solid #7E76F9;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active{
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #7E76F9;
+}
+.contact{
+    height: 100vh;
+}
+.footer-box{
+    height: 570px;
+    overflow: hidden;
+}
+.footer{
+    height: 590px;
+    background-image: url("../img/SVG/footer.svg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.footer-text{
+    height: 550px;
+}
+.ft{
+    margin-top: 150px !important;
+}
+@media screen and (max-width:576px){
+    .home{
+        height: 85vh !important;
+    }
     .content-logo-1{
         width: 300px;
+    }
+    .about-img-2{
+        width: 100% !important;
+    }
+    .about-text-2{
+        width: 100% !important;
+    }
+    .services{
+        height: 380vh;
+    }
+    .pricing{
+        height: 85vh;
+    }
+    .footer-box{
+        height: 30vh;
+    }
+    .footer{
+        height: 600px;
+        transform: translateY(-131px);
     }
 }
