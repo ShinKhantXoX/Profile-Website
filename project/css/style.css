@@ -4,9 +4,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     height: 300vh;
-    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 .site-nav{
@@ -20,6 +23,7 @@ body{
     background-repeat: no-repeat;
     background-position:top right;
     background-size: 50%;
+    position: relative;
 }
 
 .site-logo{
@@ -27,6 +31,35 @@ body{
 }
 .content-logo-1{
     width: 500px;
+}
+
+.scroll-next{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-v{
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-v .divider{
+    width: 5px;
+    height: 20px;
+    background-color: #1A129F;
 }
 
 .about{
@@ -122,10 +155,14 @@ body{
         height: 85vh;
     }
     .footer-box{
-        height: 30vh;
+        height: 150vh;
     }
     .footer{
-        height: 600px;
-        transform: translateY(-131px);
+        height: 150vh;
+        background-position: center;
+        background-size: cover;
+    }
+    .ft{
+        margin-top: 200px !important;
     }
 }
