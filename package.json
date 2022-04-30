@@ -1,0 +1,25 @@
+{
+  "name": "profile-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShinKhantXoX/Profile-Website.git"
+  },
+  "keywords": [
+    "profile-website"
+  ],
+  "author": "shin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShinKhantXoX/Profile-Website/issues"
+  },
+  "homepage": "https://github.com/ShinKhantXoX/Profile-Website#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}

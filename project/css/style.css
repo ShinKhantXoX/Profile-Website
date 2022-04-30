@@ -12,9 +12,66 @@ body{
     height: 300vh;
     overflow-x: hidden;
 }
+.ani-delay-1{
+    animation-delay: 0.5s;
+}
+.ani-delay-2{
+    animation-delay: 1s;
+}
+.ani-delay-3{
+    animation-delay: 1.5s;
+}
+.ani-delay-4{
+    animation-delay: 2s;
+}
+.ani-delay-5{
+    animation-delay: 2.5s;
+}
+.ani-delay-6{
+    animation-delay: 3s;
+}
+.ani-delay-7{
+    animation-delay: 3.5s;
+}
+.ani-delay-8{
+    animation-delay: 4s;
+}
 .site-nav{
     position: absolute;
     top: 0;
+    z-index: 2005;
+    
+}
+.menu-icon{
+    color: #1A129F;
+}
+.site-nav-scroll{
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #00000020;
+    animation: toShow 1s linear;
+}
+.site-nav-scroll .nav-link{
+    color: #1A129F !important;
+}
+.site-nav-scroll .nav-link.current-section{
+    border: 2px solid #1A129F;
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+}
+
+.site-nav-scroll .nav-link{
+    color: #1A129F !important;
+}
+.nav-link.current-section{
+    border: 2px solid white;
+
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+}
+.navbar-toggler:focus{
+    outline: none !important;
+    box-shadow: none;
 }
 
 .home{
@@ -31,6 +88,9 @@ body{
 }
 .content-logo-1{
     width: 500px;
+}
+.text{
+    width: 100%;
 }
 
 .scroll-next{
@@ -61,6 +121,19 @@ body{
     height: 20px;
     background-color: #1A129F;
 }
+.social-v a{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.social-icon a{
+    transition: 0.5s;
+}
+.social-icon a:hover{
+    transform: scale(1.5);
+}
+.social-v a:hover{
+    transform: scale(1.5);
+}
 
 .about{
     background-color: #7E76F910;
@@ -72,7 +145,7 @@ body{
     background-position: center;
 }
 .services{
-    height: 170vh;
+    height: 175vh;
     background-image: url("../img/bg-3.svg");
     background-size: 100%;
     background-position: center;
@@ -82,6 +155,12 @@ body{
     border: none;
     box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 15%) !important;
     transition: 0.5s;
+}
+.services-card img{
+    transition: 0.5s;
+}
+.services-card:hover img{
+    transform: translateX(20px);
 }
 .services-card:hover{
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
@@ -115,54 +194,164 @@ body{
     height: 15px !important;
     background-color: #7E76F9;
 }
-.contact{
-    height: 100vh;
-}
-.footer-box{
-    height: 570px;
-    overflow: hidden;
-}
 .footer{
-    height: 590px;
-    background-image: url("../img/SVG/footer.svg");
-    background-position: center;
+    /* height: 80vh; */
+    background-image: url("../img/footer-2.svg"),url("../img/footer-1.svg");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: bottom;
+    /* background-attachment: fixed; */
+    padding-top: 220px;
 }
-.footer-text{
-    height: 550px;
+.form-group{
+    margin-top: 15px;
 }
-.ft{
-    margin-top: 150px !important;
+
+@keyframes toShow {
+    from{
+
+        transform: translateY(-200px);
+
+    }to{
+
+    transform: translateY(0);
+
+         }
 }
-@media screen and (max-width:576px){
+
+@media screen and (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-link.current-section{
+        border: 2px solid #1A129F;
+        border-radius: 10em;
+        padding: 0.5rem 1.3rem !important;
+    }
+    .site-nav{
+        background-color: #ffffffee;
+        box-shadow: 0 0 5px #00000015;
+        backdrop-filter: blur(5px);
+    }
+    .site-nav .nav-link{
+        color: #1A129F !important;
+        padding: 15px 20px;
+        background: #ffffff;
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px #00000015;
+        border-radius: 10em;
+    }
+    .navbar-nav{
+        padding-top: 20px;
+    }
+    
     .home{
-        height: 85vh !important;
+        height: 100vh !important;
+    }
+    .about{
+        height: 100vh !important;
+    }
+    .text{
+        width: 70%;
     }
     .content-logo-1{
         width: 300px;
     }
     .about-img-2{
-        width: 100% !important;
+        width: 75% !important;
     }
     .about-text-2{
         width: 100% !important;
+        height: 80%;
     }
     .services{
-        height: 380vh;
+        height: 375vh;
     }
     .pricing{
-        height: 85vh;
+        height: 100vh;
     }
-    .footer-box{
-        height: 150vh;
+    
+    .ft{
+        margin-top: 381px !important;
+    }
+    .scroll-next{
+        bottom: 20px !important;
+        left: auto;
+        right: 10px;
+        margin: auto;
+    }
+    .social-v{
+        width: 25%;
+        top: auto;
+        bottom: 100px !important;
+        left: auto;
+        right: 25px !important;
+        
+    }
+    .contact{
+        background-attachment: scroll;
+    }
+    
+    .footer{
+        background-image: url("../img/footer-2.svg"),url("../img/footer-1.svg");
+        background-size: auto 80% !important;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        /* background-attachment: fixed; */
+        padding-top: 260px !important;
+    }
+}
+
+@media screen and (max-width:780px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-link.current-section{
+        border: 2px solid #1A129F;
+        border-radius: 10em;
+        
+    }
+    .site-nav{
+        background-color: #ffffffee;
+        box-shadow: 0 0 5px #00000015;
+        backdrop-filter: blur(5px);
+    }
+    .site-nav .nav-link{
+        color: #1A129F !important;
+        padding: 15px 20px;
+        background: #ffffff;
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px #00000015;
+        border-radius: 10em;
+    }
+    .navbar-nav{
+        padding-top: 20px;
+    }
+    .home{
+        height: 100vh;
+    }
+    
+    .scroll-next{
+        left: auto;
+        right: 50px;
+    }
+    .social-v{
+        left: auto;
+        bottom: 130px;
+        right: 65px;
+    }
+    .about{
+        height: 100vh;
+    }
+    .pricing{
+        height: 80vh;
     }
     .footer{
-        height: 150vh;
-        background-position: center;
-        background-size: cover;
-    }
-    .ft{
-        margin-top: 200px !important;
+        background-image: url("../img/footer-2.svg"),url("../img/footer-1.svg");
+        background-size: auto 80% !important;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        /* background-attachment: fixed; */
+        padding-top: 260px !important;
     }
 }
